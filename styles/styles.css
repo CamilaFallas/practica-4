@@ -1,0 +1,53 @@
+body {
+  background-color: #e5e5e5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card__container {
+  display: flex;
+}
+
+.card {
+  max-width: 100px;
+  border-radius: 3%;
+  margin-right: 15px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.card__img {
+  max-width: 100px;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+.card__category {
+  margin: 0;
+  font-size: 8px;
+  color: rgb(68, 75, 83);
+}
+
+.card__title {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+.card__date {
+  font-size: 8px;
+  color: rgb(68, 75, 83);
+}
+
+.card__cta::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
