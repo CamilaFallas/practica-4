@@ -25,18 +25,22 @@ ul {
     margin-bottom: 10px;
 }
 
-.card__category {
+.card__info {
+    margin: 10px;
+}
+
+.card__info__category {
     margin: 0;
     font-size: 8px;
     color: rgb(68, 75, 83);
 }
 
-.card__title {
+.card__info__title {
     margin: 10px 0;
     font-size: 15px;
 }
 
-.card__date {
+.card__info__date {
     font-size: 8px;
     color: rgb(68, 75, 83);
 }
@@ -48,4 +52,26 @@ ul {
     bottom: 0;
     right: 0;
     left: 0;
+    // visibility: hidden;
+}
+
+.card:hover {
+    background-color: lightyellow;
+    // .card__cta {
+    //     visibility: visible;
+    // }
+}
+
+.card__btn {
+    background-color: yellow;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
 }
