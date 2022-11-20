@@ -118,6 +118,11 @@ ul {
     min-width: 160px;
     width: 100%;
   }
+
+  .card__info {
+    margin-bottom: 10px;
+    height: 215px;
+  }
   
   .card__info__category {
     font-size: 12px;
@@ -152,7 +157,9 @@ ul {
   }
   
   .card__info {
-    margin: 20px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+    height: 200px;
   }
   
   .card__info__category {
@@ -168,6 +175,7 @@ ul {
   }
 
   .card__cta {
+    padding-left: 20px;
     font-size: 17px;
   }
 
@@ -192,7 +200,9 @@ ul {
   }
   
   .card__info {
-    margin: 20px;
+    padding: 20px 20px 0 20px;
+    margin-bottom: 20px;
+    height: 240px;
   }
   
   .card__info__category {
@@ -208,6 +218,7 @@ ul {
   }
 
   .card__cta {
+    padding-left: 20px;
     font-size: 20px;
   }
 
