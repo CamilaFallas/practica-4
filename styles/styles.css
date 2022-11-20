@@ -97,6 +97,10 @@ ul {
   padding: 5px 10px;
   font-weight: 700;
 }
+.card__btn:hover {
+  background: linear-gradient(90deg, #ffe24d 11.03%, #99cc7e 53.39%, #93e0f1 103.45%);
+  cursor: pointer;
+}
 
 @media (min-width: 480px) {
   ul {
