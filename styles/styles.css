@@ -5,6 +5,7 @@
 body {
   background-color: #e5e5e5;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -14,6 +15,7 @@ h1 {
 ul {
   list-style: none;
   padding: 0;
+  margin-left: 15px;
 }
 
 .card__container {
@@ -79,8 +81,10 @@ ul {
   cursor: pointer;
 }
 
-.card__cta:hover {
-  display: inline-block;
+.card__cta--arrow {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.53 6.53a.75.75 0 0 0 0-1.06L7.757.697a.75.75 0 1 0-1.06 1.06L10.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L12.53 6.53ZM0 6.75h12v-1.5H0v1.5Z' fill='%23171717'/%3E%3C/svg%3E");
+  width: 13px;
+  height: 12px;
 }
 
 .card:hover .card__cta {
@@ -94,6 +98,123 @@ ul {
   border: none;
   padding: 5px 10px;
   font-weight: 700;
+}
+
+@media (min-width: 480px) {
+  ul {
+    margin-left: 40px;
+  }
+  .card {
+    min-width: 160px;
+    height: 350px;
+  }
+  .card__img {
+    min-width: 160px;
+    width: 100%;
+  }
+  .card__info__category {
+    font-size: 12px;
+  }
+  .card__info__title {
+    font-size: 20px;
+  }
+  .card__info__date {
+    font-size: 12px;
+  }
+  .card__cta {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  ul {
+    margin-left: 50px;
+  }
+  .card {
+    min-width: 250px;
+    height: 400px;
+  }
+  .card__img {
+    min-width: 250px;
+    width: 100%;
+  }
+  .card__info {
+    margin: 20px;
+  }
+  .card__info__category {
+    font-size: 17px;
+  }
+  .card__info__title {
+    font-size: 23px;
+  }
+  .card__info__date {
+    font-size: 17px;
+  }
+  .card__cta {
+    font-size: 17px;
+  }
+  .card__btn {
+    padding: 13px 20px;
+  }
+}
+@media (min-width: 1024px) {
+  ul {
+    margin-left: 100px;
+  }
+  .card {
+    min-width: 320px;
+    height: 480px;
+  }
+  .card__img {
+    min-width: 320px;
+    width: 100%;
+  }
+  .card__info {
+    margin: 20px;
+  }
+  .card__info__category {
+    font-size: 20px;
+  }
+  .card__info__title {
+    font-size: 27px;
+  }
+  .card__info__date {
+    font-size: 20px;
+  }
+  .card__cta {
+    font-size: 20px;
+  }
+  .card__btn {
+    padding: 17px 25px;
+  }
+}
+.image-container {
+  position: relative;
+  width: fit-content;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  background: red;
+  opacity: 1;
+  transition: 300ms ease-in;
+  border-radius: 0 0 250px 0;
+}
+
+.image-container:hover::before {
+  width: 200%;
+  height: 100%;
+  opacity: 0.5;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */
